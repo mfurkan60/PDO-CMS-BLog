@@ -1,3 +1,4 @@
+<?php !defined("index") ? die("Bu sayfaya böyle ulaşamazsınız") : null;   ?>
 <?php
 $servername = "localhost";
 $username = "root";

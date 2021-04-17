@@ -1,3 +1,5 @@
+<?php !defined("index") ? die("Bu sayfaya böyle ulaşamazsınız") : null;   ?>
+
 <?php
 //get id value for each posts
 $id = $_GET["id"];
@@ -47,5 +49,24 @@ foreach($x as $m){  ?>
 <?php }
 
 ?>
+
+
+
+<div class="sol2">
+    <h2>iletisim formu</h2>	
+	<ul> 
+	<li>adınız</li>
+	<li><input type="text" name="name" /></li>
+	<li>email</li>
+	<li><input type="text" name="email" /></li>
+	<li><input type="text" name="subject" placeholder="konu baslıgını girin" /></li>
+	<li>kime</li>
+	<li>alıcı</li>
+	<li><textarea name="message" id="" cols="50" rows="10"></textarea></li>
+	<li>guvenlik kodu</li>
+	<li><input type="text" name="sec_code" style="width:150px;" placeholder="guvenlik kodunu girin"/></li>
+	<li><button type="submit">gonder</button></li>
+	</ul>
+	</div>
 
 

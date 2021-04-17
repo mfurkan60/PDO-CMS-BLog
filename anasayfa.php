@@ -1,3 +1,4 @@
+<?php !defined("index") ? die("Bu sayfaya böyle ulaşamazsınız") : null;   ?>
 <?php
 // we get all post
 $konu = $db->prepare("SELECT * FROM konular inner join  kategoriler on 

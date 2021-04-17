@@ -1,4 +1,11 @@
-<?php include "functions/db.php";    ?>
+<?php define("index", true); ?>
+<?php include "functions/db.php";   
+
+session_start();
+ob_start();
+
+
+?>
 
 <!DOCTYPE HTML>
 <html lang="en-US">
@@ -43,7 +50,18 @@ switch($do){
 	case "ara":
 		break;
 
+	case "cikis":
+		
+		session_destroy();
+			
+		header("refresh: 2; url=index.php");
+			
+		echo '<div class="basarili2">bBsarıyla cıkıs yaptınız yönlendiriliyorsunuz</div>';
+			
+		break;
+
 	case "uye": 
+		include ("uye_giris.php");
 		break;	
 
 		case "devam":
@@ -51,6 +69,7 @@ switch($do){
 		break;
 			
 		default :
+		
 		include("anasayfa.php");
 		break;
 
@@ -67,16 +86,7 @@ switch($do){
 	
 	
 	<div class="sag"> 
-	<div class="sag2"> 
-	<h2>uye girisi</h2>
-	<ul> 
-	<li>uye adı</li>
-	<li><input type="text" name="login_name" /></li>
-	<li>sifreniz</li>
-	<li><input type="password" name="login_password" /></li>
-	<li><button type="submit">giris yap</button></li>
-	</ul>
-	</div>
+<?php include("uye.php");   ?>
 	
 	
 	

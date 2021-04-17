@@ -183,7 +183,15 @@
 	padding-right: 30px;
 	 
 }
-
+.hata{
+	border:1px solid red;
+	padding: 1opx;
+	font-size: 20px;
+}
+.basarili2{
+	font-size: 20px;
+	padding: 20px;
+}
 .sol2 p {
 	
 	margin:12px;
